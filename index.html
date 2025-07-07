@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonidos de la Ciudad</title>
+  <link rel="icon" href="media/favicon.ico" type="image/x-icon" sizes="32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#inicio" id="logo" class="logo-link logo-rotate">
+      <img src="media/favicon.ico" alt="Logo Sonidos de la Ciudad" class="logo-img">
+      <span class="logo-text">Sonidos de la Ciudad</span>
+    </a>
+    <div class="header-tagline">
+      <p>¡Sentí la potencia del mejor rock en vivo! 15 al 17 de noviembre, Parque Central</p>
+    </div>
+  </header>
+
+  <nav class="menu categorias-nav" aria-label="Navegación principal y categorías">
+    <a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="#artistas"><i class="fa-solid fa-users"></i> Artistas</a>
+    <a href="#cronograma"><i class="fa-solid fa-calendar"></i> Cronograma</a>
+    <a href="#entradas"><i class="fa-solid fa-ticket"></i> Entradas</a>
+    <a href="#ubicacion"><i class="fa-solid fa-map-location-dot"></i> Ubicación</a>
+    <a href="#compra-tickets"><i class="fa-solid fa-credit-card"></i> Comprar</a>
+    <a href="#audios"><i class="fa-solid fa-volume-high"></i> Audios</a>
+  </nav>
+
+  <div class="container">
+    <main>
+
+      <section id="inicio">
+        <h2>Inicio</h2>
+        <div class="card-demo" aria-label="Tarjeta de ejemplo">
+          <i class="fa-solid fa-star"></i>
+          <div>
+            <strong>¡Bienvenido al festival Sonidos de la Ciudad 2024!</strong><br>
+            Tres noches, tres géneros, tres experiencias únicas: Rock, Electrónica y Jazz en los mejores escenarios de Santiago del Estero.
+          </div>
+        </div>
+        <p>Disfrutá de los shows de <b>Los Redonditos de Ricota (tributo)</b>, <b>Varios DJs</b> y <b>Trío de Jazz local</b> en vivo. Elige tu evento favorito y viví la música como nunca antes.</p>
+        <h3>Géneros musicales presentes</h3>
+        <ul>
+          <li>Rock</li>
+          <li>Electrónica</li>
+          <li>Jazz</li>
+        </ul>
+      </section>
+
+      <section id="artistas">
+        <h2>Artistas</h2>
+        <div class="card-demo" aria-label="Artista destacado">
+          <i class="fa-solid fa-guitar"></i>
+          <div>
+            <strong>Los Redonditos de Ricota (tributo)</strong><br>
+            El mejor tributo al mítico grupo argentino, en el Estadio Madre de Ciudades.
+          </div>
+        </div>
+        <article>
+          <h3>Varios DJs</h3>
+          <p>Lineup de DJs nacionales e internacionales, en el Festival de Música Electrónica, Complejo Urbano.</p>
+        </article>
+        <article>
+          <h3>Trío de Jazz local</h3>
+          <p>Lo mejor del jazz santiagueño en Bar Cultural La Ferretería.</p>
+        </article>
+        <button id="gemini-artist-btn" class="gemini-btn">✨ Descubrí más sobre los artistas</button>
+        <div id="gemini-artist-result" class="gemini-result-container"></div>
+      </section>
+
+      <section id="cronograma">
+        <h2>Cronograma</h2>
+        <h3>Por día y hora</h3>
+        <ol>
+          <li>Miércoles 10/07/2024 - 21:00: Los Redonditos de Ricota (tributo) — Concierto de rock, Estadio Madre de Ciudades</li>
+          <li>Lunes 15/07/2024 - 18:00: Varios DJs — Festival de Música Electrónica, Complejo Urbano</li>
+          <li>Sábado 20/07/2024 - 22:00: Trío de Jazz local — Noche de Jazz, Bar Cultural La Ferretería</li>
+        </ol>
+        <h3>Resumen por evento</h3>
+        <table>
+          <thead>
+            <tr><th>Fecha</th><th>Evento</th><th>Artista</th><th>Lugar</th><th>Horario</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>10/07/2024</td><td>Concierto de rock</td><td>Los Redonditos de Ricota (tributo)</td><td>Estadio Madre de Ciudades</td><td>21:00</td></tr>
+            <tr><td>15/07/2024</td><td>Festival de Música Electrónica</td><td>Varios DJs</td><td>Complejo Urbano</td><td>18:00</td></tr>
+            <tr><td>20/07/2024</td><td>Noche de Jazz</td><td>Trío de Jazz local</td><td>Bar Cultural La Ferretería</td><td>22:00</td></tr>
+          </tbody>
+        </table>
+        <button id="gemini-schedule-btn" class="gemini-btn">✨ Ayúdame a decidir qué ver</button>
+        <div id="gemini-schedule-result" class="gemini-result-container"></div>
+      </section>
+
+      <section id="entradas">
+        <h2>Entradas</h2>
+        <h3>Precios</h3>
+        <table>
+          <thead>
+            <tr><th>Evento</th><th>Precio</th><th>Disponibles</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Concierto de rock</td><td>$1500 ARS</td><td>500</td></tr>
+            <tr><td>Festival de Música Electrónica</td><td>$2000 ARS</td><td>1000</td></tr>
+            <tr><td>Noche de Jazz</td><td>$800 ARS</td><td>100</td></tr>
+          </tbody>
+        </table>
+        <p>Seleccioná tu evento y tipo de entrada en la sección <b>Compra de Tickets</b>. Los precios y disponibilidad se actualizan automáticamente.</p>
+      </section>
+
+      <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <h3>Lugares de los eventos</h3>
+        <ul>
+          <li>Estadio Madre de Ciudades — Santiago del Estero (Concierto de rock, 10/07/2024)</li>
+          <li>Complejo Urbano — Santiago del Estero (Festival de Música Electrónica, 15/07/2024)</li>
+          <li>Bar Cultural La Ferretería — Santiago del Estero (Noche de Jazz, 20/07/2024)</li>
+        </ul>
+
+        <h3>Mapa del evento</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.181964429545!2d-64.2642226849856!3d-27.7951109827487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943b53e2e2e2e2e3%3A0x7e7e7e7e7e7e7e7e!2sPlaza%20Libertad%2C%20Santiago%20del%20Estero!5e0!3m2!1ses-419!2sar!4v1716138000000!5m2!1ses-419!2sar" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Video promocional</h3>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/ISJtvWhkMFQ" title="YouTube video" allowfullscreen></iframe>
+
+        <h3>Redes sociales</h3>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/facebook&tabs=timeline"
+          width="100%" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen>
+        </iframe>
+      </section>
+
+      <section id="compra-tickets">
+        <h2>Compra de Tickets</h2>
+        <div id="timer-compra" style="text-align:center;font-weight:bold;color:#FF206E;margin-bottom:10px;min-height:1.5em;"></div>
+        <form id="form-tickets" class="form-tickets-flex" novalidate style="max-width:none;">
+          <div class="form-tickets-col">
+            <fieldset>
+              <legend>Datos del Comprador</legend>
+              <label for="nombreCompleto">Nombre completo:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="nombreCompleto" name="nombreCompleto" required minlength="3" pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{3,}$" placeholder="Tu nombre completo">
+              <div class="form-msg" id="msg-nombreCompleto" aria-live="polite"></div>
+
+              <label for="email">Correo electrónico:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="ejemplo@email.com">
+              <div class="form-msg" id="msg-email" aria-live="polite"></div>
+
+              <label for="telefono">Número de teléfono:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="tel" id="telefono" name="telefono" required pattern="^\d{10}$" placeholder="Ej: 3851234567">
+              <div class="form-msg" id="msg-telefono" aria-live="polite"></div>
+
+              <label for="fechaNacimiento">Fecha de nacimiento (dd/mm/yyyy):<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="fechaNacimiento" name="fechaNacimiento" required pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$" placeholder="dd/mm/aaaa">
+              <div class="form-msg" id="msg-fechaNacimiento" aria-live="polite"></div>
+
+              <label for="pais">País de residencia:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <select id="pais" name="pais" required></select>
+              <div class="form-msg" id="msg-pais" aria-live="polite"></div>
+            </fieldset>
+          </div>
+
+          <div class="form-tickets-col">
+            <fieldset>
+              <legend>Datos del Evento</legend>
+              <label for="evento">Evento:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <select id="evento" name="evento" required></select>
+              <div class="form-msg" id="msg-evento" aria-live="polite"></div>
+
+              <label for="fechaEvento">Fecha del evento:</label>
+              <input type="text" id="fechaEvento" name="fechaEvento" readonly>
+
+              <label for="ubicacionEvento">Ubicación:</label>
+              <input type="text" id="ubicacionEvento" name="ubicacionEvento" readonly>
+
+              <label for="tipoEntrada">Tipo de entrada:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <select id="tipoEntrada" name="tipoEntrada" required>
+                <option value="">Seleccionar</option>
+                <option value="General">General</option>
+                <option value="VIP">VIP</option>
+                <option value="Palco">Palco</option>
+              </select>
+              <div class="form-msg" id="msg-tipoEntrada" aria-live="polite"></div>
+
+              <label for="cantidadEntradas">Cantidad de entradas:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="number" id="cantidadEntradas" name="cantidadEntradas" min="1" max="6" required>
+              <div class="form-msg" id="msg-cantidadEntradas" aria-live="polite"></div>
+
+              <div id="precioTotal" class="precio-total"></div>
+            </fieldset>
+          </div>
+
+          <div class="form-tickets-col">
+            <fieldset>
+              <legend>Datos de Pago</legend>
+              <label for="numeroTarjeta">Número de tarjeta:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="numeroTarjeta" name="numeroTarjeta" required maxlength="19" placeholder="0000 0000 0000 0000">
+              <div class="form-msg" id="msg-numeroTarjeta" aria-live="polite"></div>
+              <div id="tipoTarjeta"></div>
+
+              <label for="vencimientoTarjeta">Fecha de vencimiento (MM/AA):<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="vencimientoTarjeta" name="vencimientoTarjeta" required pattern="^(0[1-9]|1[0-2])\/\d{2}$" placeholder="MM/AA">
+              <div class="form-msg" id="msg-vencimientoTarjeta" aria-live="polite"></div>
+
+              <label for="cvv">CVV:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="cvv" name="cvv" required maxlength="4" pattern="^\d{3,4}$" placeholder="CVV">
+              <div class="form-msg" id="msg-cvv" aria-live="polite"></div>
+
+              <label for="nombreTarjeta">Nombre en la tarjeta:<span aria-hidden="true" style="color:#FF206E">*</span></label>
+              <input type="text" id="nombreTarjeta" name="nombreTarjeta" required pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$" placeholder="Como figura en la tarjeta">
+              <div class="form-msg" id="msg-nombreTarjeta" aria-live="polite"></div>
+            </fieldset>
+          </div>
+
+          <div style="flex-basis:100%;height:0;"></div>
+          <div style="width:100%;">
+            <div id="form-error" class="form-msg" aria-live="polite"></div>
+            <button type="submit" id="btn-comprar" disabled>Comprar</button>
+          </div>
+        </form>
+        <div id="resumenCompra" class="resumen-compra"></div>
+      </section>
+
+      <section id="audios">
+        <h2>Audios representativos</h2>
+        <audio controls>
+          <source src="media/audio1.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio.
+        </audio>
+        <audio controls>
+          <source src="media/audio2.mp3" type="audio/mpeg">
+        </audio>
+        <audio controls>
+          <source src="media/audio3.mp3" type="audio/mpeg">
+        </audio>
+      </section>
+
+    </main>
+    <aside>
+      <h3>Info útil</h3>
+      <ul>
+        <li><i class="fa-solid fa-clock"></i> Horario: 18:00 a 02:00</li>
+        <li><i class="fa-solid fa-map"></i> Parque Central</li>
+        <li><i class="fa-solid fa-bus"></i> Transporte público disponible</li>
+        <li><i class="fa-solid fa-wheelchair"></i> Accesible</li>
+      </ul>
+      <h4>Redes</h4>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sonidos de la Ciudad. Todos los derechos reservados.</p>
+    <small>Paleta de colores: <a href="https://www.colorhunt.co/palette/22223b4a4e694f709cffffff" target="_blank">Color Hunt</a> | Fuente: <a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a></small>
+  </footer>
+  
+  <!-- Botón del Chatbot -->
+  <button id="chatbot-toggle" class="chatbot-button">
+      <i class="fa-solid fa-robot"></i>
+  </button>
+
+  <!-- Ventana del Chatbot -->
+  <div id="chatbot-container" class="chatbot-container">
+      <div class="chatbot-header">
+          <h3>Asistente Virtual</h3>
+          <button id="chatbot-close">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages">
+          <!-- Mensaje de bienvenida -->
+          <div class="chat-message bot">
+              ¡Hola! Soy tu asistente virtual para el festival Sonidos de la Ciudad. ¿En qué puedo ayudarte? ¡Pregúntame sobre los artistas, fechas o cómo comprar tus entradas!
+          </div>
+      </div>
+      <div class="chatbot-input-area">
+          <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta aquí...">
+          <button id="chatbot-send">
+              <i class="fa-solid fa-paper-plane"></i>
+          </button>
+      </div>
+  </div>
+
+
+  <script src="js/scroll-suave.js"></script>
+  <script src="js/scroll-logo-top.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/aside-toggle.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/gemini-features.js"></script>
+
+</body>
+</html>
